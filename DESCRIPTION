@@ -1,0 +1,21 @@
+Package: lcv
+Title: League of Conservation Voters Congressional Scorecard Dataset
+Version: 1.0.0
+Authors@R: 
+    person("Caspar", "Peter", , "cdpeter84@gmail.com", role = c("aut", "cre"))
+Description: A comprehensive dataset of League of Conservation Voters (LCV) 
+    Congressional Scorecard data spanning from 1971 to 2024. Includes tools 
+    for downloading and processing environmental voting records for U.S. 
+    House and Senate members.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+    tidyverse,
+    rvest,
+    duckdb
+Suggests:
+    testthat (>= 3.0.0)
+URL: https://github.com/your-username/lcv
+BugReports: https://github.com/your-username/lcv/issues
