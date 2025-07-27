@@ -1,0 +1,80 @@
+# R and RStudio files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# R temporary files
+*~
+*.swp
+*.swo
+.#*
+
+# R package development
+inst/doc/
+vignettes/*.html
+vignettes/*.pdf
+.httr-oauth
+
+# knitr and R markdown
+*.utf8.md
+*.knit.md
+.Rproj.user
+
+# Shiny
+rsconnect/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Data files (uncomment if you want to exclude processed data)
+# data-processed/
+# *.rds
+# *.duckdb
+
+# Environment variables
+.env
+.Rprofile
+
+# Package files
+packrat/lib*/
+packrat/src/
+
+# R check results
+*.Rcheck/
+
+# Produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# renv - exclude cache but keep lockfile and activation
+renv/library/
+renv/staging/
+renv/cellar/
+# Keep renv.lock and renv/activate.R for reproducibility
+data-raw/
+#
+*.sh
+.lock
