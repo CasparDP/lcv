@@ -18,7 +18,7 @@ The League of Conservation Voters National Environmental Scorecard is the gold s
 ## Dataset Features
 
 - **Temporal Coverage**: 1971-2024 (54 years of data)
-- **Legislative Bodies**: U.S. House of Representatives and U.S. Senate  
+- **Legislative Bodies**: U.S. House of Representatives and U.S. Senate
 - **Variables**: Member name, party affiliation, state, annual score, lifetime score
 - **Format**: Available in R (.rds) and DuckDB formats
 - **Total Records**: 50,000+ individual member-year observations
@@ -62,7 +62,7 @@ remotes::install_deps()
 
 ```r
 install.packages(c(
-  "tidyverse",  # Data manipulation and visualization  
+  "tidyverse",  # Data manipulation and visualization
   "rvest",      # Web scraping
   "duckdb"      # Database operations
 ))
@@ -90,6 +90,7 @@ source("Scripts/get_sites.R")
 ```
 
 This script will:
+
 - Download HTML files from the LCV website for all years (1971-current)
 - Store files in the `data-raw/` directory
 - Skip already downloaded files
@@ -101,6 +102,7 @@ source("Scripts/db_maka.R")
 ```
 
 This script will:
+
 - Parse all HTML files in `data-raw/`
 - Extract structured data (names, scores, party, state)
 - Save processed data to `data-processed/`
@@ -120,17 +122,17 @@ dbDisconnect(con)
 
 ## Data Structure
 
-| Variable | Type | Description |
-|----------|------|-------------|
-| `year` | integer | Year of the scorecard |
-| `type` | character | "house" or "senate" |
-| `name` | character | Member's full name |
-| `link` | character | URL to member's LCV profile |
-| `party` | character | Political party affiliation |
-| `vote_year` | integer | Year of voting record |
-| `year_score` | integer | Annual environmental score (0-100) |
-| `life_time_score` | integer | Cumulative lifetime score (0-100) |
-| `state` | character | State represented |
+| Variable          | Type      | Description                        |
+| ----------------- | --------- | ---------------------------------- |
+| `year`            | integer   | Year of the scorecard              |
+| `type`            | character | "house" or "senate"                |
+| `name`            | character | Member's full name                 |
+| `link`            | character | URL to member's LCV profile        |
+| `party`           | character | Political party affiliation        |
+| `vote_year`       | integer   | Year of voting record              |
+| `year_score`      | integer   | Annual environmental score (0-100) |
+| `life_time_score` | integer   | Cumulative lifetime score (0-100)  |
+| `state`           | character | State represented                  |
 
 ## Example Analyses
 
@@ -165,7 +167,7 @@ If you use this dataset in your research, please cite:
 
 ```
 League of Conservation Voters Congressional Scorecard Dataset (1971-2024)
-Available at: [GitHub repository URL]
+Available at: https://github.com/CasparDP/lcv.git
 Original data source: League of Conservation Voters (https://www.lcv.org/scorecard/)
 ```
 
@@ -177,6 +179,7 @@ Original data source: League of Conservation Voters (https://www.lcv.org/scoreca
 ## Contributing
 
 Contributions are welcome! Please feel free to:
+
 - Report bugs or data inconsistencies
 - Suggest improvements to data processing scripts
 - Add analysis examples
