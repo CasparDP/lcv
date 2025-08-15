@@ -78,3 +78,7 @@ data-raw/
 #
 *.sh
 .lock
+
+# AI instructions
+.github/
+.github/copilot-instructions.md
