@@ -17,5 +17,5 @@ Imports:
     duckdb
 Suggests:
     testthat (>= 3.0.0)
-URL: https://github.com/your-username/lcv
-BugReports: https://github.com/your-username/lcv/issues
+URL: https://github.com/CasparDP/lcv
+BugReports: https://github.com/CasparDP/lcv/issues
